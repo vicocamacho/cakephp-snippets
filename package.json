@@ -1,13 +1,12 @@
 {
   "name": "cakephp-snippets",
   "main": "./lib/cakephp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CakePHP Snippets for Atom",
   "repository": "https://github.com/vicocamacho/cakephp-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
