@@ -1,0 +1,20 @@
+".text.html.php:not(.source)":
+  "input":
+    "prefix": "cinput"
+    "body": "<?php echo $this->${1:Form}->input('${2:field}'); ?>$0"
+
+  "create":
+    "prefix": "create"
+    "body": "<?php echo $this->${1:Form}->create('${2:Model}'); ?>$0"
+
+  "submit":
+    "prefix": "csubmit"
+    "body": "<?php echo $this->${1:Form}->submit(__('${2:Save}')); ?>$0"
+
+  "element":
+    "prefix": "element"
+    "body": "<?php echo $this->element('${1:file}'); ?>$0"
+
+  "link":
+    "prefix": "clink"
+    "body": "<?php echo $this->Html->link('${1:title}', ${2:array('controller' => '${3:controller}', 'action' => '${4:action}')}); ?>$0"

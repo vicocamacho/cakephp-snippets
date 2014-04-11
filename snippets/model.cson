@@ -1,0 +1,24 @@
+".source.php":
+  "belongsTo":
+    "prefix": "bt"
+    "body": "public $belongsTo = array(\n\t'${1:classname}'${2: => array(\n\t\t'foreignKey' => '${3:foreign_key}',\n\t\t'className' => '${4:className}'\n\t)}\n);$0"
+
+  "hasMany":
+    "prefix": "hm"
+    "body": "public $hasMany = array(\n\t'${1:className}'${2: => array(\n\t\t'className' => '${3:className}',\n\t\t'dependent' => ${4:true}\n\t)}\n);$0"
+
+  "hasAndBelongsToMany":
+    "prefix": "habtm"
+    "body": "public $hasAndBelongsToMany = array(\n\t'${1:className}'${2: => array(\n\t\t'className' => '${3:className}',\n\t\t'joinTable' => '${4:join_table}',\n\t\t'foreignKey' => '${5:foreign_key}',\n\t\t'associationForeignKey' => '${6:association_foreign_key}',\n\t)}\n);$0"
+
+  "validate":
+    "prefix": "validate"
+    "body": "public $validate = array(\n\t'${1:field}' => array(\n\t\t'rule' => '${2:ruleName}',${3:\n\t\t'message' => '${4:message}'}\n\t)\n);$0"
+
+  "validation":
+    "prefix": "validation"
+    "body": "'${1:field}' => array(\n\t'rule' => '${2:ruleName}',${3:\n\t'message' => '${4:message}'}\n)$0"
+
+  "actsAs":
+    "prefix": "act"
+    "body": "public $actsAs = array(\n\t$1\n);$0"

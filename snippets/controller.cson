@@ -1,0 +1,32 @@
+".source.php":
+  "data":
+    "prefix": "data"
+    "body": "$this->request->data;$0"
+
+  "find":
+    "prefix": "find"
+    "body": "$this->${1:Model}->find('${2:all}'$3);"
+
+  "save":
+    "prefix": "save"
+    "body": "$this->${1:Model}->save(${2:$this->request->data});"
+
+  "pr":
+    "prefix": "pr"
+    "body": "pr($1);${2:exit;}"
+
+  "set":
+    "prefix": "set"
+    "body": "$this->set($1);$0"
+
+  "flash":
+    "prefix": "flash"
+    "body": "$this->Session->setFlash($1);$0"
+
+  "conditions":
+    "prefix": "conditions"
+    "body": "'conditions' => array('${1:Model}.${2:id}' => ${3:$id})$0"
+
+  "contain":
+    "prefix": "contain"
+    "body": "'contain' => array('${1:Model}')$0"

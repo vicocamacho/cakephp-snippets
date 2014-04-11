@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable cakephp': 'cakephp:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'cakephp'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'cakephp:toggle' }
+      ]
+    ]
+  }
+]
