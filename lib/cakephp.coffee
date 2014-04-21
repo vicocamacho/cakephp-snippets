@@ -1,1 +1,0 @@
-CakephpView = require './cakephp-view'
