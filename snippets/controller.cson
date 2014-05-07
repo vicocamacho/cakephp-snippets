@@ -30,3 +30,7 @@
   "contain":
     "prefix": "contain"
     "body": "'contain' => array('${1:Model}')$0"
+
+  "url-array":
+    "prefix": "url"
+    "body": "array('controller' => '$1', 'action' => '$2'${3:, });$0"

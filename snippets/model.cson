@@ -22,3 +22,7 @@
   "actsAs":
     "prefix": "act"
     "body": "public $actsAs = array(\n\t$1\n);$0"
+
+  "App::uses":
+    "prefix": "uses"
+    "body": "App::uses('${1:AppModel}', '${2:Model}');$0"
