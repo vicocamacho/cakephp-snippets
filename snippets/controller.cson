@@ -1,7 +1,7 @@
 ".source.php":
   "data":
     "prefix": "data"
-    "body": "$this->request->data;$0"
+    "body": "$this->request->data${1:;}$0"
 
   "find":
     "prefix": "find"
@@ -27,6 +27,10 @@
     "prefix": "conditions"
     "body": "'conditions' => array('${1:Model}.${2:id}' => ${3:$id})$0"
 
+  "order":
+    "prefix": "order"
+    "body": "'order' => array('${1:Model}.${2:id}' => '${3:ASC}')$0"
+
   "contain":
     "prefix": "contain"
     "body": "'contain' => array('${1:Model}')$0"
@@ -34,3 +38,15 @@
   "url-array":
     "prefix": "url"
     "body": "array('controller' => '$1', 'action' => '$2'${3:, });$0"
+
+  "$this->request":
+    "prefix": "request"
+    "body": "$this->request$0"
+
+  "$this->redirect":
+    "prefix": "redirect"
+    "body": "$this->redirect($1);$0"
+
+  "$this->request->params":
+    "prefix": "params"
+    "body": "$this->request->params${1:;}$0"
