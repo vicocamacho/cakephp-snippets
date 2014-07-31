@@ -1,7 +1,7 @@
 {
   "name": "cakephp-snippets",
   "main": "./lib/cakephp-snippets",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "CakePHP Snippets for Atom",
   "repository": {
     "type": "git",
