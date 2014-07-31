@@ -1,23 +1,23 @@
 ".source.php":
   "data":
     "prefix": "data"
-    "body": "$this->request->data${1:;}$0"
+    "body": "$this->request->data$0"
 
   "find":
     "prefix": "find"
-    "body": "$this->${1:Model}->find('${2:all}'$3);"
+    "body": "$this->${1:Model}->find('${2:all}'$0);"
 
   "save":
     "prefix": "save"
-    "body": "$this->${1:Model}->save(${2:$this->request->data});"
+    "body": "$this->${1:Model}->save(${2:$this->request->data})${3:;}$0"
 
   "pr":
     "prefix": "pr"
-    "body": "pr($1);${2:exit;}"
+    "body": "pr($0);exit;"
 
   "set":
     "prefix": "set"
-    "body": "$this->set($1);$0"
+    "body": "$this->set($0);"
 
   "flash":
     "prefix": "flash"
@@ -45,8 +45,12 @@
 
   "$this->redirect":
     "prefix": "redirect"
-    "body": "$this->redirect($1);$0"
+    "body": "$this->redirect($0);"
 
   "$this->request->params":
     "prefix": "params"
-    "body": "$this->request->params${1:;}$0"
+    "body": "$this->request->params$0"
+
+  "$this->request->query":
+    "prefix": "query"
+    "body": "$this->request->query$0"

@@ -3,10 +3,25 @@
   "main": "./lib/cakephp-snippets",
   "version": "0.5.0",
   "description": "CakePHP Snippets for Atom",
-  "repository": "https://github.com/vicocamacho/cakephp-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicocamacho/cakephp-snippets"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "readme": "# CakePHP Snippets For Atom\n\nThis package adds a collection of snippets for the Atom Editor.\n\nFor example Find:\n\n![cakephp find snippet](http://cl.ly/Uyl4/cakephpfind.gif)\n\nLinks:\n\n![CakePHP link snippet](http://cl.ly/Uz9A/cakephplink.gif)\n\nInputs:\n\n![CakePHP input snippet](http://cl.ly/Uz4p/cakephpinput.gif)\n\nAnd Some More.\n\nFeel free to fork this project and send me a pull request or open an issue if something is not working.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/vicocamacho/cakephp-snippets/issues"
+  },
+  "homepage": "https://github.com/vicocamacho/cakephp-snippets",
+  "_id": "cakephp-snippets@0.5.0",
+  "dist": {
+    "shasum": "b7e61ec3c1ebc035e0cac867183cc6f9a5edc412"
+  },
+  "_resolved": "/var/folders/st/70fkzzcj1jv3nq32_czfbjlr0000gp/T/d-11452-1815-740zgn/package.tgz",
+  "_from": "/var/folders/st/70fkzzcj1jv3nq32_czfbjlr0000gp/T/d-11452-1815-740zgn/package.tgz"
 }
